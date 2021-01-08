@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel='preconnect' href='https://fonts.gstatic.com'>
+  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/b717240cbe.js" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='css/amc.css'>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Fylo landing page with two column layout</title>
+</head>
+<body>
+  <header class="header py-lg-2">
+    <article class="flex p-1-5">
+      <aside class="header-img w-20">
+        <img src="images/logo.svg" class="ml-lg-3" alt="Fylo Logo">
+      </aside> <!-- LOGO -->
+      <aside class="header-nav flex w-60 mr-lg-2">
+        <a class="mr-1" href="#features">Features</a>
+        <a class="mr-1" href="#team">Team</a>
+        <a href="#signin">Sign In</a>
+      </aside> <!-- NAV -->
+    </article>
+  </header> <!-- HEADER -->
+  <main class="main-content mt-3">
+    <section class="hero-section">
+      <article class="container flex-md row-r-md">
+        <aside class="hero-image ml-md-2">
+          <img src="images/illustration-1.svg" alt="Image 1">
+        </aside> <!-- HERO IMAGE -->
+        <aside class="hero-content">
+          <aside class="hero-content-title mt-2">
+            <h2 class="text-center lh-1-5 text-md-start">All your files in one secure location, accessible anywhere</h2>
+          </aside>
+          <aside class="hero-content-form mt-2">
+            <p class="text-center lh-1-5 text-md-start">Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.</p>
+            <form class="hero-form flex column row-md mt-1">
+              <input class="input" type="email" name="email" placeholder="Enter your email..." id="email">
+              <input class="btn p-1 fw-bold text-white-1 mt-1 mt-md-0 ml-md-1" type="submit" value="Get Started">
+            </form>
+          </aside> <!-- HERO CONTENT FORM -->
+        </aside> <!-- HERO CONTENT -->
+      </article>
+    </section> <!-- HERO SECTION -->
+    <section class="stay-productive py-3 mt-6 mt-md-8 mt-lg-10">
+      <article class="img-decorator w-100">
+        <img src="images/bg-curve-mobile.svg" alt="Decorator">
+      </article>
+      <article class="container flex-md row-r-md">
+        <aside class="stay-productive-image ml-md-1">
+          <img src="images/illustration-2.svg" alt="Image 2">
+        </aside>
+        <aside class="stay-productive-body">
+          <aside class="stay-productive-title mt-2">
+            <h3 class="text-center text-md-start">Stay productive, wherever you are</h3>
+          </aside>
+          <aside class="stay-productive-text mt-1-5 text-center text-md-start">
+            <p class="lh-1-5 text-start">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+            <p class="lh-1-5 mt-1 text-start">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+            <span class="stay-productive-link py-0-5 text-center mt-2 "><a href="#" >See how Fylo works <i class="fas fa-arrow-circle-right"></i></a></span>
+          </aside> <!-- STAY PRODUCTIVE TEXT -->
+          <aside class="stay-productive-testimonials mt-3">
+            <aside class="testimonial bg-white-1 px-2 py-1-5">
+              <img src="images/icon-quotes.svg" class="w-10" alt="Quotes Image">
+              <aside class="testimonial-body">
+                <p class="lh-1">Fylo has improved our team productivity by an order of magnitude. Since 
+                making the switch our team has become a well-oiled collaboration machine.</p>
+              </aside> <!-- TESTIMONIAL BODY -->
+              <aside class="testimonial-profile flex py-0-5">
+                <img src="images/avatar-testimonial.jpg" alt="Profile Testimonial">
+                <aside class="testimonial-profile-details ml-0-5">
+                  <h5>Kyle Burton</h5>
+                  <small>Founder & CEO, Huddle</small>
+                </aside>
+              </aside>
+            </aside>
+          </aside>
+        </aside> <!-- STAY PRODUCTIVE BODY -->
+      </article>
+    </section> <!-- STAY PRODUCTIVE -->
+    <section class="get-early py-3">
+      <article class="container flex-md">
+        <aside class="get-early-title">
+          <h4 class="text-white-1 text-center text-md-start">Get early access today</h4>
+          <p class="text-white-1 text-center lh-1-5 mt-1 text-md-start">It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.</p>
+        </aside> <!-- TITLE -->
+        <aside class="get-early-body">
+          <aside class="get-early-form w-80 mx-auto">
+            <form class="get-early-form-body flex column mt-1">
+              <input class="input" type="email" name="email" placeholder="Enter your email..." id="email">
+              <input class="btn p-1 fw-bold text-white-1 mt-0-5" type="submit" value="Get Started">
+            </form>
+          </aside>
+        </aside> <!-- BODY -->
+      </article>
+    </section>
+  </main> <!-- MAIN CONTENT -->
+  <section class="footer py-3">
+    <article class="container">
+      <aside class="footer-image w-50">
+        <img src="images/logo-copy.svg" alt="Logo Fylo">
+      </aside> <!-- FOOTER IMAGE -->
+      <aside class="footer-contact text-white-1 mt-3">
+        <aside class="contact flex">
+          <i class="fas fa-phone"></i><p class="ml-1">Phone: +1-543-123-4567</p>
+        </aside>
+        <aside class="contact flex mt-1">
+          <i class="fas fa-envelope"></i><p class="ml-1">example@fylo.com</p>
+        </aside>
+      </aside> <!-- FOOTER CONTACT -->
+      <article class="footer-nav mt-3 flex-md">
+        <aside class="nav flex column">
+          <a href="#" class="py-0-5 pt-md-0 text-white-1">About Us</a>
+          <a href="#" class="py-0-5 text-white-1">Job</a>
+          <a href="#" class="py-0-5 text-white-1">Press</a>
+          <a href="#" class="py-0-5 text-white-1">Blog</a>
+        </aside>
+        <aside class="nav flex column mt-1 mt-md-0 ml-md-2">
+          <a href="#" class="py-0-5 pt-md-0 text-white-1">Contact Us</a>
+          <a href="#" class="py-0-5 text-white-1">Terms</a>
+          <a href="#" class="py-0-5 text-white-1">Privacy</a>
+        </aside>
+      </article> <!-- FOOTER NAV -->
+      <aside class="sociales flex mt-3 w-30 mx-auto">
+        <a class="text-white-1" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="text-white-1" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="text-white-1" href="#"><i class="fab fa-instagram"></i></a>
+      </aside>
+    </article>
+  </section>
+  <footer>
+    <p class="attribution text-white-1 text-center py-1">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="#">Richard Crespo</a>.
+    </p>
+  </footer>
+</body>
+</html>

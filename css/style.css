@@ -1,0 +1,182 @@
+:root{
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+html{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------- COMPONENTES -------------------- */
+.btn{
+  border: none;
+  background-color: var(--bright-blue);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn:hover{
+  opacity: .7;
+}
+.input{
+  outline: none;
+  padding: .7rem .7rem .7rem 1rem;
+}
+.input::placeholder{
+  color: var(--light-gray);
+}
+@media screen and (min-width: 51rem){
+  .input{
+    padding: .5rem .5rem .5rem 1rem;
+  }
+  .hero-form > input{
+    width: 50%;
+  }
+}
+/* -------------------- ESTILOS PROPIOS -------------------- */
+/* -------------------- HEADER -------------------- */
+.header > .flex{
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav{
+  justify-content: flex-end;
+}
+.header-nav > a{
+  font-size: .8rem;
+}
+@media screen and (min-width: 68rem){
+  .header-img > img{
+    width: 150px;
+  }
+}
+@media screen and (min-width: 96rem){
+  .header-nav > a{
+    font-size: 1.5rem;
+  }
+}
+
+/* -------------------- HERO SECTION -------------------- */
+@media screen and (min-width: 51rem){
+  .hero-section > .container{
+    max-width: 90%;
+    align-items: center;
+  }
+}
+
+/* -------------------- STAY PRODUCTIVE -------------------- */
+.stay-productive{
+  background-color: var(--light-grayish-blue);
+  position: relative;
+}
+.img-decorator{
+  position: absolute;
+  top: -2rem;
+}
+.stay-productive-link{
+  border-bottom: thin solid var(--moderate-cyan);
+  display: inline-block;
+}
+.stay-productive-link > a{
+  color: var(--moderate-cyan);
+}
+.testimonial{
+  border-radius: 5px;
+}
+.testimonial-body > p{
+  font-size: .7rem;
+}
+.testimonial-profile > img{
+  width: 35px;
+  border-radius: 50%;
+}
+@media screen and (min-width: 51rem){
+  .img-decorator{
+    top: -6rem;
+  }
+  .stay-productive > .container{
+    max-width: 90%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 68rem){
+  .img-decorator{
+    top: -9rem;
+  }
+}
+@media screen and (min-width: 85rem){
+  .testimonial{
+    width: 50%; 
+  }
+}
+@media screen and (min-width: 96rem){
+  .img-decorator{
+    top: -14rem;
+  }
+}
+
+
+/* -------------------- GET EARLY -------------------- */
+.get-early{
+  background-color: var(--desaturated-blue);
+}
+@media screen and (min-width: 51rem){
+  .get-early > .container{
+    justify-content: space-between;
+  }
+  .get-early-title{
+    flex-basis: 40%;
+  }
+  .get-early-body{
+    flex-basis: 40%;
+  }
+}
+@media screen and (min-width: 68rem){
+  .get-early-form-body > .btn{
+    width: 50%;
+  }
+}
+/* -------------------- FOOTER -------------------- */
+.footer{
+  background-color: var(--very-dark-blue);
+}
+.sociales{
+  justify-content: space-between;
+}
+@media screen and (min-width: 38rem){
+  .footer > .container{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 100px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'fylo fylo fylo fylo'
+    'contact nav nav sociales';
+  }
+  .footer-image{
+    grid-area: fylo;
+    width: 20%;
+  }
+  .footer-contact{
+    grid-area: contact;
+  }
+  .footer-nav{
+    grid-area: nav;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+  }
+  .sociales{
+    grid-area: sociales;
+    width: 80%;
+  }
+}
+
+/* -------------------- ATTRIBUTION -------------------- */
+.attribution{
+  background-color: var(--desaturated-blue);
+}
+.attribution > a{
+  color: var(--light-grayish-blue)
+}
